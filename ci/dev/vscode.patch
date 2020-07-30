@@ -217,6 +217,24 @@ index 0000000000..88b720ceee
 +	util.rimraf("out-vscode-min"),
 +	common.minifyTask("out-vscode")
 +));
+diff --git a/extensions/package.json b/extensions/package.json
+index 7c668c9744..ceb0728940 100644
+--- a/extensions/package.json
++++ b/extensions/package.json
+@@ -3,12 +3,12 @@
+   "version": "0.0.1",
+   "description": "Dependencies shared by all extensions",
+   "dependencies": {
++    "rimraf": "^3.0.2",
+     "typescript": "3.9.6"
+   },
+   "scripts": {
+     "postinstall": "node ./postinstall"
+   },
+   "devDependencies": {
+-    "rimraf": "^3.0.2"
+   }
+ }
 diff --git a/package.json b/package.json
 index 86e3d5140d..2e52256e49 100644
 --- a/package.json
